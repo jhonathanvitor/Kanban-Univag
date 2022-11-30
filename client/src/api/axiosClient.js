@@ -1,7 +1,7 @@
 import axios from 'axios'
 import queryString from 'query-string'
 
-const baseUrl = 'https://kanban-univag-bns9t1opb-jhonathanvitor.vercel.app/api/v1/'
+const baseUrl = (process.env.REACT_APP_URI)
 const getToken = () => localStorage.getItem('token')
 
 const axiosClient = axios.create({
